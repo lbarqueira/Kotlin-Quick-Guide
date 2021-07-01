@@ -16,7 +16,7 @@ Learn more
 
 **The smallest `main()` program for printing text**
 
-```run-kotlin
+```kotlin
 fun main() {
     println("Hello, world!")
 }

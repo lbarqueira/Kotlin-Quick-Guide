@@ -24,20 +24,20 @@ fun main() {
 
 **Printing a line of text**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 println("This is the text to print!")
 ```
 
 **Inline comments**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 // This is a comment line.
 // This is another comment.
 ```
 
 **Variables**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 // Assign once, cannot change.
 val age = "5"
 val name = "Rover"
@@ -49,14 +49,14 @@ var rolledValue: Int = 4
 
 **Printing variables with string templates**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 println("You are already ${age}!")
 println("You are already ${age} days old, ${name}!")
 ```
 
 **Data types**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 Int       // Whole positive and negative numbers and zero
 String    // Piece of text between quotes
 IntRange  // Setting a range such as 1..6
@@ -65,7 +65,7 @@ Boolean   // Can only be true or false
 
 **Function without arguments**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 // Define the function.
 fun printHello () {
     println ("Hello Kotlin")
@@ -77,7 +77,7 @@ printHello()
 
 **Function with arguments**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 fun printBorder(border: String, timesToRepeat: Int) {
     repeat(timesToRepeat) {
         print(border)
@@ -88,7 +88,7 @@ fun printBorder(border: String, timesToRepeat: Int) {
 
 **Function that returns a value**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 fun roll(): Int {
      val randomNumber = (1..6).random()
      return randomNumber
@@ -97,7 +97,7 @@ fun roll(): Int {
 
 **Basic operators**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 *     // multiplication
 /     // division
 +     // addition
@@ -107,7 +107,7 @@ fun roll(): Int {
 
 **Logic operators**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 >    // greater than
 <    // less than
 ==   // equal
@@ -118,7 +118,7 @@ fun roll(): Int {
 
 **Creating random numbers**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 val randomNumber = diceRange.random()
 
 fun roll() {
@@ -131,7 +131,7 @@ fun roll() {
 
 **Repeating an action with `repeat()`**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 fun printBorder() {
     repeat(23) {
         print("=")
@@ -141,7 +141,7 @@ fun printBorder() {
 
 **Nesting `repeat()` loops**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 fun printCakeBottom(age: Int, layers: Int) {
     repeat(layers) {
         repeat(age + 2) {
@@ -154,7 +154,7 @@ fun printCakeBottom(age: Int, layers: Int) {
 
 **Conditional statements with `if`/`else`**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 fun main() {
    val num = 4
    if (num > 4) {
@@ -169,7 +169,7 @@ fun main() {
 
 **Conditional statements with `when`**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 when (rollResult) {
     luckyNumber -> println("You won!")
     1 -> println("So sorry! You rolled a 1. Try again!")
@@ -183,7 +183,7 @@ when (rollResult) {
 
 **Assigning the result of a `when` statement to a variable**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 // Determine which drawable resource ID to use based on the dice roll.
 val drawableResource = when (diceRoll) {
     1 -> R.drawable.dice_1
@@ -199,7 +199,7 @@ val drawableResource = when (diceRoll) {
 
 **Simple class with property and method**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 class Dice {
     var sides = 6
 
@@ -212,7 +212,7 @@ class Dice {
 
 **Class with parameter**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 class Dice (val numSides: Int) {
 
     fun roll(): Int {
@@ -224,7 +224,7 @@ class Dice (val numSides: Int) {
 
 **Creating instances**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 val myFirstDice = Dice(6)
 ```
 
@@ -235,14 +235,14 @@ val myFirstDice = Dice(6)
 
 **Abstract class**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 abstract class Dwelling() {
 }
 ```
 
 **Abstract class with an abstract property**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 abstract class Dwelling() {
     abstract val buildingMaterial: String
 }
@@ -250,7 +250,7 @@ abstract class Dwelling() {
 
 **Abstract class with an abstract method**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 abstract class Dwelling() {
     abstract fun floorArea(): Double
 }
@@ -258,27 +258,27 @@ abstract class Dwelling() {
 
 **Mark a class `open` so it can be subclassed**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 open class RoundHut(residents: Int) {
 }
 ```
 
 **Create a subclass by extending a parent class**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 class SquareCabin : Dwelling()
 ```
 
 **Override a function from a superclass**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 override fun floorArea(): Double {
 }
 ```
 
 **Call the superclass implementation of a function**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 override fun floorArea(): Double {
     return super.floorArea() * floors
 }
@@ -288,49 +288,49 @@ override fun floorArea(): Double {
 
 **Define a read-only list**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 val numbers = listOf(1, 2, 3, 4, 5, 6)
 ```
 
 **Get the size of the list**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 numbers.size
 ```
 
 **Get the first item of a list**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 numbers[0]
 ```
 
 **Get a copy of a list in reverse order**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 listOf("red", "blue", "green").reversed()
 ```
 
 **Define a mutable list of strings**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 val entrees = mutableListOf<String>()
 ```
 
 **Add an item to a mutable list**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 entrees.add("spaghetti")
 ```
 
 **Modify an item in a mutable list**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 entrees[0] = "lasagna"
 ```
 
 **Remove an item from a mutable list**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 entrees.remove("lasagna")
 ```
 
@@ -338,7 +338,7 @@ entrees.remove("lasagna")
 
 **Use `for` loop to iterate over items in a list**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 for (element in myList) {
     // Perform an operation with each item
     println(element)
@@ -347,7 +347,7 @@ for (element in myList) {
 
 **Use `while` loop to iterate over items in a list**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 var index = 0
 while (index < myList.size) {
     println(myList[index])
@@ -359,21 +359,21 @@ while (index < myList.size) {
 
 **Number of characters in a String**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 val name = "Android"
 println(name.length)
 ```
 
 **Use a variable in a String template**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 val number = 10
 println("$number people")
 ```
 
 **Use an expression in a String template**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 val number = 10
 val groups = 5
 println("${number * groups} people")
@@ -383,7 +383,7 @@ println("${number * groups} people")
 
 **Augmented assignments**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 a += b   // a = a + b
 a -= b   // a = a - b
 a *= b   // a = a * b
@@ -392,7 +392,7 @@ a /= b   // a = a / b
 
 **Use `with` to simplify access to an object**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 with(squareCabin) {
     println("Capacity: ${capacity}")
     println("Material: ${buildingMaterial}")
@@ -402,31 +402,31 @@ with(squareCabin) {
 
 **Import from the Kotlin math library**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 import kotlin.math.PI
 ```
 
 **Use fully qualified name for a constant in the Kotlin math library (no import statement needed)**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 kotlin.math.PI * radius * radius
 ```
 
 **Chain calls together (for accessing properties and calling methods)**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 val stringInTextField = binding.costOfService.text.toString()
 ```
 
 **Variable number of function arguments**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 fun addToppings(vararg val toppings: String)
 ```
 
 **Package declaration**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 package com.example.affirmations.model
 ```
 

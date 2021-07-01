@@ -11,8 +11,8 @@ Learn more
 
 Table of Contents
 
-- [Unit 1](#Unit 1)
-  + [Kotlin programs](#Kotlin programs)
+- [Unit 1](#Unit--1)
+  + [Kotlin programs](#Kotli--programs)
   + [Classes & Interfaces](#classes--interfaces)
   + [Methods](#methods)
   + [Fields](#fields)

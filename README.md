@@ -19,11 +19,9 @@ Table of Contents
   + [Variables & Parameters](#variables--parameters)
   + [Misc](#misc)
 
-<div id='#Unit--1'/>
 [Unit 1](https://developer.android.com/courses/android-basics-kotlin/unit-1)
 ----------------------------------------------------------------------------
 
-<div id='#Kotlin--programs'/>
 ### Kotlin programs
 
 **The smallest `main()` program for printing text**
@@ -139,7 +137,6 @@ fun roll() {
 }
 ```
 
-<div id='#Controlling--program--flow'/>
 ### Controlling program flow
 
 **Repeating an action with `repeat()`**

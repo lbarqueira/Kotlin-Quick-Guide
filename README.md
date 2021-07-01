@@ -20,7 +20,7 @@ Learn more
   + [Misc](#misc)
 
 
-#[Unit 1](https://developer.android.com/courses/android-basics-kotlin/unit-1)
+[Unit 1](https://developer.android.com/courses/android-basics-kotlin/unit-1)
 ----------------------------------------------------------------------------
 
 ### Kotlin programs

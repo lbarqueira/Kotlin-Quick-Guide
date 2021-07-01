@@ -437,21 +437,21 @@ package com.example.affirmations.model
 
 **Create a set from a list**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 val numbers = listOf(0, 3, 8, 4, 0, 5, 5, 8, 9, 2)
 val setOfNumbers = numbers.toSet()
 ```
 
 **Define a set**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 val set1 = setOf(1,2,3)
 val set2 = mutableSetOf(3, 4, 5)
 ```
 
 **Set operations**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 set1.intersect(set2) // 3
 set1.union(set2) // 1, 2, 3, 4, 5
 ```
@@ -460,7 +460,7 @@ set1.union(set2) // 1, 2, 3, 4, 5
 
 **Define a mutable map**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 val peopleAges = mutableMapOf<String, Int>(
     "Fred" to 30,
     "Ann" to 23
@@ -469,7 +469,7 @@ val peopleAges = mutableMapOf<String, Int>(
 
 **Set a value in a mutable map**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 peopleAges.put("Barbara", 42)
 peopleAges["Joe"] = 51
 ```
@@ -478,21 +478,21 @@ peopleAges["Joe"] = 51
 
 **Iterate over a collection**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 peopleAges.forEach { print("${it.key} is ${it.value}, ") }
 // Fred is 31, Ann is 23, Barbara is 42, Joe is 51,
 ```
 
 **Transform each item in a collection**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 println(peopleAges.map { "${it.key} is ${it.value}" }.joinToString(", ") )
 // Fred is 31, Ann is 23, Barbara is 42, Joe is 51
 ```
 
 **Filter the items in a collection**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 val filteredNames = peopleAges.filter { it.key.length < 4 }
 println(filteredNames)
 // {Ann=23, Joe=51}
@@ -500,7 +500,7 @@ println(filteredNames)
 
 **Other collection operations**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 val words = listOf("about", "acute", "balloon", "best", "brief", "class")
 val filteredWords = words.filter { it.startsWith("b", ignoreCase = true) }
     .shuffled() // [brief, balloon, best]
@@ -512,7 +512,7 @@ val filteredWords = words.filter { it.startsWith("b", ignoreCase = true) }
 
 **let**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 arguments?.let {
     letterId = it.getString(LETTER).toString()
 }
@@ -520,7 +520,7 @@ arguments?.let {
 
 **apply**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 binding?.apply {
     ...
     flavorFragment = this@FlavorFragment
@@ -531,7 +531,7 @@ binding?.apply {
 
 **Backing property**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 private var _currentScrambledWord = "test"
 val currentScrambledWord: String
     get() = _currentScrambledWord
@@ -539,20 +539,20 @@ val currentScrambledWord: String
 
 **Safe calls**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 val letterId = intent?.extras?.getString("letter").toString()
 ```
 
 **Lambda functions**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 val triple: (Int) -> Int = { a: Int -> a * 3 }
 println(triple(5))
 ```
 
 **Companion objects**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 class DetailActivity: AppCompatActivity() {
 
     ...
@@ -571,7 +571,7 @@ DetailActivity.LETTER
 
 **Property delegation**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 // syntax
 var <property-name> : <property-type> by <delegate-class>()
 // example
@@ -580,14 +580,14 @@ private val viewModel: GameViewModel by viewModels()
 
 **Late initialization**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 private var wordsList: MutableList<String> = mutableListOf() // has a value at initialization
 private lateinit var currentWord: String // needs to be assigned after initialization
 ```
 
 **Elvis operator**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 var quantity : Int? = null
 quantity ?: 0 // 0
 quantity = 4
@@ -601,7 +601,7 @@ quantity ?: 0 // 4
 
 **Declare a suspend function**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 suspend fun getValue(): Double {
     // long running work or calls to other suspend functions
 }
@@ -609,7 +609,7 @@ suspend fun getValue(): Double {
 
 **Run a suspend function in the GlobalScope**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 GlobalScope.launch {
     val output = getValue()
 }
@@ -617,7 +617,7 @@ GlobalScope.launch {
 
 **Call suspend function from another suspend function.**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 suspend fun processValue() {
     val value = getValue()
     // modify the value
@@ -626,7 +626,7 @@ suspend fun processValue() {
 
 **Access a coroutine Job**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 val job: Job = GlobalScope.launch {
     val output = getValue()
 }
@@ -634,13 +634,13 @@ val job: Job = GlobalScope.launch {
 
 **Cancel a coroutine Job**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 job.cancel()
 ```
 
 **Run a suspend function and block the current thread until the function completes**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 runBlocking {
     val output = getValue()
 }
@@ -648,7 +648,7 @@ runBlocking {
 
 **Use async to make a suspend function deferable**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 runBlocking {
     val output = await { getValue() }
 
@@ -660,7 +660,7 @@ runBlocking {
 
 **Declare an object**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 object DataProviderManager {
 
 }
@@ -668,7 +668,7 @@ object DataProviderManager {
 
 **Catch an exception**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 try {
     // code that may throw an error
 } catch (exception: Exception) {
@@ -678,7 +678,7 @@ try {
 
 **Create an enum class**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 enum class Direction {
     NORTH, SOUTH, WEST, EAST
 }
@@ -686,13 +686,13 @@ enum class Direction {
 
 **Access an enum class value**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 val direction = Direction.NORTH
 ```
 
 **Check enum values**
 
-``` {.prettyprint .lang-kotlin translate="no" dir="ltr"}
+```kotlin
 when (direction) {
     Directon.NORTH -> {
 

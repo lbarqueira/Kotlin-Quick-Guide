@@ -3,7 +3,10 @@ Kotlin Quick Guide for Android Basics in Kotlin
 
 This Kotlin Quick Guide summarizes the topics covered in the [Android Basics in Kotlin course](https://developer.android.com/courses/android-basics-kotlin/course) in the form of code snippets.
 
-Learn more
+## Table of Contents
+[Learn more](#learn-more)
+
+<a id="learn-more"></a>Learn more
 ----------
 
 -   See the [Kotlin Language Documentation](https://kotlinlang.org/docs/reference/) for full reference.

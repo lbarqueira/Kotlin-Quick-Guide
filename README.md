@@ -7,6 +7,8 @@ This Kotlin Quick Guide summarizes the topics covered in the [Android Basics in 
 [Learn more](#learn-more)  
 [Unit 1](https://github.com/lbarqueira/Kotlin-Quick-Guide/blob/main/README.md#unit-1)  
 &ensp; [Kotlin programs](https://github.com/lbarqueira/Kotlin-Quick-Guide/blob/main/README.md#kotlin-programs)  
+&ensp; [Controlling program flow](https://github.com/lbarqueira/Kotlin-Quick-Guide/blob/main/README.md#controlling-program-flow)  
+[Unit 2]()
 
 
 <a id="learn-more"></a>Learn more

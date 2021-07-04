@@ -1,7 +1,7 @@
 Kotlin Quick Guide for Android Basics in Kotlin
 ===============================================
 
-This Kotlin Quick Guide summarizes the topics covered in the [Android Basics in Kotlin course](https://developer.android.com/courses/android-basics-kotlin/course) in the form of code snippets.
+
 
 ## Table of Contents
 [Learn more](#learn-more)  
@@ -10,8 +10,22 @@ This Kotlin Quick Guide summarizes the topics covered in the [Android Basics in 
 &ensp; [Controlling program flow](https://github.com/lbarqueira/Kotlin-Quick-Guide/blob/main/README.md#controlling-program-flow)  
 &ensp; [Classes](https://github.com/lbarqueira/Kotlin-Quick-Guide/blob/main/README.md#classes)  
 [Unit 2](https://github.com/lbarqueira/Kotlin-Quick-Guide/blob/main/README.md#unit-2)  
-&ensp; [Classes](https://github.com/lbarqueira/Kotlin-Quick-Guide/blob/main/README.md#classes-1)
+&ensp; [Classes](https://github.com/lbarqueira/Kotlin-Quick-Guide/blob/main/README.md#classes-1)  
+&ensp; [Lists]()  
+&ensp; [Loops]()  
+&ensp; [Strings]()  
+&ensp; [Miscellaneous]()  
+[Unit 3]()  
+&ensp; [Sets]()  
+&ensp; [Maps]()  
+&ensp; [Collection Operations]()  
+&ensp; [Scope functions]()  
+&ensp; [Miscellaneous]()  
+[Unit 4]()  
+&ensp; [Coroutines]()  
+&ensp; [Miscellaneous]()  
 
+This Kotlin Quick Guide summarizes the topics covered in the [Android Basics in Kotlin course](https://developer.android.com/courses/android-basics-kotlin/course) in the form of code snippets.  
 
 <a id="learn-more"></a>Learn more
 ----------

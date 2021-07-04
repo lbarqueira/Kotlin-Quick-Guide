@@ -10,6 +10,7 @@ This Kotlin Quick Guide summarizes the topics covered in the [Android Basics in 
 &ensp; [Controlling program flow](https://github.com/lbarqueira/Kotlin-Quick-Guide/blob/main/README.md#controlling-program-flow)  
 &ensp; [Classes](https://github.com/lbarqueira/Kotlin-Quick-Guide/blob/main/README.md#classes)  
 [Unit 2](https://github.com/lbarqueira/Kotlin-Quick-Guide/blob/main/README.md#unit-2)  
+&ensp; [Classes](https://github.com/lbarqueira/Kotlin-Quick-Guide/blob/main/README.md#classes-1)
 
 
 <a id="learn-more"></a>Learn more

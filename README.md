@@ -37,7 +37,7 @@ This Kotlin Quick Guide summarizes the topics covered in the [Android Basics in 
 <a id="unit-one"></a>[Unit 1](https://developer.android.com/courses/android-basics-kotlin/unit-1)
 ----------------------------------------------------------------------------
 
-###<a id="kotlin-programs"></a>Kotlin programs
+<a id="kotlin-programs"></a>Kotlin programs
 
 **The smallest `main()` program for printing text**
 
@@ -152,7 +152,7 @@ fun roll() {
 }
 ```
 
-<a id="program-flow"></a>### Controlling program flow
+<a id="program-flow"></a>Controlling program flow
 
 **Repeating an action with `repeat()`**
 
@@ -220,7 +220,7 @@ val drawableResource = when (diceRoll) {
 }
 ```
 
-<a id="classes"></a>### Classes
+<a id="classes"></a>Classes
 
 **Simple class with property and method**
 

@@ -38,6 +38,7 @@ This Kotlin Quick Guide summarizes the topics covered in the [Android Basics in 
 ----------------------------------------------------------------------------
 
 <a id="kotlin-programs"></a>Kotlin programs
+----------
 
 **The smallest `main()` program for printing text**
 

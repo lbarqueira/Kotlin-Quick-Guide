@@ -6,24 +6,24 @@ Kotlin Quick Guide for Android Basics in Kotlin
 ## Table of Contents
 [Learn more](#learn-more)  
 [Unit 1](#unit-one)  
-&ensp; [Kotlin programs](https://github.com/lbarqueira/Kotlin-Quick-Guide/blob/main/README.md#kotlin-programs)  
-&ensp; [Controlling program flow](https://github.com/lbarqueira/Kotlin-Quick-Guide/blob/main/README.md#controlling-program-flow)  
-&ensp; [Classes](https://github.com/lbarqueira/Kotlin-Quick-Guide/blob/main/README.md#classes)  
-[Unit 2](https://github.com/lbarqueira/Kotlin-Quick-Guide/blob/main/README.md#unit-2)  
-&ensp; [Classes](https://github.com/lbarqueira/Kotlin-Quick-Guide/blob/main/README.md#classes-1)  
-&ensp; [Lists]()  
-&ensp; [Loops]()  
-&ensp; [Strings]()  
-&ensp; [Miscellaneous]()  
-[Unit 3]()  
-&ensp; [Sets]()  
-&ensp; [Maps]()  
-&ensp; [Collection Operations]()  
-&ensp; [Scope functions]()  
-&ensp; [Miscellaneous]()  
-[Unit 4]()  
-&ensp; [Coroutines]()  
-&ensp; [Miscellaneous]()  
+&ensp; [Kotlin programs](#kotlin-programs)  
+&ensp; [Controlling program flow](#program-flow)  
+&ensp; [Classes](#classes)  
+[Unit 2](#unit-two)  
+&ensp; [Classes](#classes-two)  
+&ensp; [Lists](#lists)  
+&ensp; [Loops](#loops)  
+&ensp; [Strings](#strings)  
+&ensp; [Miscellaneous](#miscellaneous-two)  
+[Unit 3](#unit-3)  
+&ensp; [Sets](#sets)  
+&ensp; [Maps](#maps)  
+&ensp; [Collection Operations](#collection-operations)  
+&ensp; [Scope functions](#scope-functions)  
+&ensp; [Miscellaneous](#miscellaneous-three)  
+[Unit 4](#unit-4)  
+&ensp; [Coroutines](#coroutines)  
+&ensp; [Miscellaneous](#miscellaneous-four)  
 
 This Kotlin Quick Guide summarizes the topics covered in the [Android Basics in Kotlin course](https://developer.android.com/courses/android-basics-kotlin/course) in the form of code snippets.  
 
@@ -37,7 +37,7 @@ This Kotlin Quick Guide summarizes the topics covered in the [Android Basics in 
 <a id="unit-one"></a>[Unit 1](https://developer.android.com/courses/android-basics-kotlin/unit-1)
 ----------------------------------------------------------------------------
 
-### Kotlin programs
+<a id="kotlin-programs"></a>### Kotlin programs
 
 **The smallest `main()` program for printing text**
 
@@ -152,7 +152,7 @@ fun roll() {
 }
 ```
 
-### Controlling program flow
+<a id="program-flow"></a>### Controlling program flow
 
 **Repeating an action with `repeat()`**
 
@@ -220,7 +220,7 @@ val drawableResource = when (diceRoll) {
 }
 ```
 
-### Classes
+<a id="classes"></a>### Classes
 
 **Simple class with property and method**
 
@@ -253,7 +253,7 @@ class Dice (val numSides: Int) {
 val myFirstDice = Dice(6)
 ```
 
-[Unit 2](https://developer.android.com/courses/android-basics-kotlin/unit-2)
+<a id="unit-two"></a>[Unit 2](https://developer.android.com/courses/android-basics-kotlin/unit-2)
 ----------------------------------------------------------------------------
 
 ### Classes
@@ -455,7 +455,7 @@ fun addToppings(vararg val toppings: String)
 package com.example.affirmations.model
 ```
 
-[Unit 3](https://developer.android.com/courses/android-basics-kotlin/unit-3)
+<a id="unit-three"></a>[Unit 3](https://developer.android.com/courses/android-basics-kotlin/unit-3)
 ----------------------------------------------------------------------------
 
 ### Sets
@@ -619,7 +619,7 @@ quantity = 4
 quantity ?: 0 // 4
 ```
 
-[Unit 4](https://developer.android.com/courses/android-basics-kotlin/unit-3)
+<a id="unit-four"></a>[Unit 4](https://developer.android.com/courses/android-basics-kotlin/unit-3)
 ----------------------------------------------------------------------------
 
 ### Coroutines

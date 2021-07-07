@@ -153,8 +153,7 @@ fun roll() {
 }
 ```
 
-<a id="program-flow"></a>Controlling program flow
-----------
+### <a id="program-flow"></a>Controlling program flow
 
 **Repeating an action with `repeat()`**
 
@@ -222,8 +221,7 @@ val drawableResource = when (diceRoll) {
 }
 ```
 
-<a id="classes"></a>Classes
-----------
+### <a id="classes"></a>Classes
 
 **Simple class with property and method**
 
@@ -259,8 +257,7 @@ val myFirstDice = Dice(6)
 <a id="unit-two"></a>[Unit 2](https://developer.android.com/courses/android-basics-kotlin/unit-2)
 ----------------------------------------------------------------------------
 
-<a id="classes-two"></a>Classes
-----------
+### <a id="classes-two"></a>Classes
 
 **Abstract class**
 
@@ -313,8 +310,7 @@ override fun floorArea(): Double {
 }
 ```
 
-<a id="lists"></a>Lists
-----------
+### <a id="lists"></a>Lists
 
 **Define a read-only list**
 
@@ -364,8 +360,7 @@ entrees[0] = "lasagna"
 entrees.remove("lasagna")
 ```
 
-<a id="loops"></a>Loops
-----------
+### <a id="loops"></a>Loops
 
 **Use `for` loop to iterate over items in a list**
 
@@ -386,8 +381,7 @@ while (index < myList.size) {
 }
 ```
 
-<a id="strings"></a>Strings
-----------
+### <a id="strings"></a>Strings
 
 **Number of characters in a String**
 
@@ -411,8 +405,7 @@ val groups = 5
 println("${number * groups} people")
 ```
 
-<a id="miscellaneous-two"></a>Miscellaneous
-----------
+### <a id="miscellaneous-two"></a>Miscellaneous
 
 **Augmented assignments**
 
@@ -466,8 +459,7 @@ package com.example.affirmations.model
 <a id="unit-three"></a>[Unit 3](https://developer.android.com/courses/android-basics-kotlin/unit-3)
 ----------------------------------------------------------------------------
 
-<a id="sets"></a>Sets
-----------
+### <a id="sets"></a>Sets
 
 **Create a set from a list**
 
@@ -490,8 +482,7 @@ set1.intersect(set2) // 3
 set1.union(set2) // 1, 2, 3, 4, 5
 ```
 
-<a id="maps"></a>Maps
-----------
+### <a id="maps"></a>Maps
 
 **Define a mutable map**
 
@@ -509,8 +500,7 @@ peopleAges.put("Barbara", 42)
 peopleAges["Joe"] = 51
 ```
 
-<a id="collection-operations"></a>Collection Operations
-----------
+### <a id="collection-operations"></a>Collection Operations
 
 **Iterate over a collection**
 
@@ -544,8 +534,7 @@ val filteredWords = words.filter { it.startsWith("b", ignoreCase = true) }
     .sorted() // [balloon, brief]
 ```
 
-<a id="scope-functions"></a>Scope functions
-----------
+### <a id="scope-functions"></a>Scope functions
 
 **let**
 
@@ -564,8 +553,7 @@ binding?.apply {
 }
 ```
 
-<a id="miscellaneous-three"></a>Miscellaneous
-----------
+### <a id="miscellaneous-three"></a>Miscellaneous
 
 **Backing property**
 
@@ -635,8 +623,7 @@ quantity ?: 0 // 4
 <a id="unit-four"></a>[Unit 4](https://developer.android.com/courses/android-basics-kotlin/unit-3)
 ----------------------------------------------------------------------------
 
-<a id="coroutines"></a>Coroutines
-----------
+### <a id="coroutines"></a>Coroutines
 
 **Declare a suspend function**
 
@@ -695,8 +682,7 @@ runBlocking {
 }
 ```
 
-<a id="miscellaneous-four"></a>Miscellaneous
-----------
+### <a id="miscellaneous-four"></a>Miscellaneous
 
 **Declare an object**
 

@@ -154,6 +154,7 @@ fun roll() {
 ```
 
 <a id="program-flow"></a>Controlling program flow
+----------
 
 **Repeating an action with `repeat()`**
 
@@ -222,6 +223,7 @@ val drawableResource = when (diceRoll) {
 ```
 
 <a id="classes"></a>Classes
+----------
 
 **Simple class with property and method**
 
@@ -257,7 +259,8 @@ val myFirstDice = Dice(6)
 <a id="unit-two"></a>[Unit 2](https://developer.android.com/courses/android-basics-kotlin/unit-2)
 ----------------------------------------------------------------------------
 
-### Classes
+<a id="classes-two"></a>Classes
+----------
 
 **Abstract class**
 

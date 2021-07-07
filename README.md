@@ -313,7 +313,8 @@ override fun floorArea(): Double {
 }
 ```
 
-### Lists
+<a id="lists"></a>Lists
+----------
 
 **Define a read-only list**
 
@@ -363,7 +364,8 @@ entrees[0] = "lasagna"
 entrees.remove("lasagna")
 ```
 
-### Loops
+<a id="loops"></a>Loops
+----------
 
 **Use `for` loop to iterate over items in a list**
 
@@ -384,7 +386,8 @@ while (index < myList.size) {
 }
 ```
 
-### Strings
+<a id="strings"></a>Strings
+----------
 
 **Number of characters in a String**
 
@@ -408,7 +411,8 @@ val groups = 5
 println("${number * groups} people")
 ```
 
-### Miscellaneous
+<a id="miscellaneous-two"></a>Miscellaneous
+----------
 
 **Augmented assignments**
 
@@ -462,7 +466,8 @@ package com.example.affirmations.model
 <a id="unit-three"></a>[Unit 3](https://developer.android.com/courses/android-basics-kotlin/unit-3)
 ----------------------------------------------------------------------------
 
-### Sets
+<a id="sets"></a>Sets
+----------
 
 **Create a set from a list**
 
@@ -485,7 +490,8 @@ set1.intersect(set2) // 3
 set1.union(set2) // 1, 2, 3, 4, 5
 ```
 
-### Maps
+<a id="maps"></a>Maps
+----------
 
 **Define a mutable map**
 
@@ -503,7 +509,8 @@ peopleAges.put("Barbara", 42)
 peopleAges["Joe"] = 51
 ```
 
-### Collection Operations
+<a id="collection-operations"></a>Collection Operations
+----------
 
 **Iterate over a collection**
 
@@ -537,7 +544,8 @@ val filteredWords = words.filter { it.startsWith("b", ignoreCase = true) }
     .sorted() // [balloon, brief]
 ```
 
-### Scope functions
+<a id="scope-functions"></a>Scope functions
+----------
 
 **let**
 
@@ -556,7 +564,8 @@ binding?.apply {
 }
 ```
 
-### Miscellaneous
+<a id="miscellaneous-three"></a>Miscellaneous
+----------
 
 **Backing property**
 
@@ -626,7 +635,8 @@ quantity ?: 0 // 4
 <a id="unit-four"></a>[Unit 4](https://developer.android.com/courses/android-basics-kotlin/unit-3)
 ----------------------------------------------------------------------------
 
-### Coroutines
+<a id="coroutines"></a>Coroutines
+----------
 
 **Declare a suspend function**
 
@@ -685,7 +695,8 @@ runBlocking {
 }
 ```
 
-### Miscellaneous
+<a id="miscellaneous-four"></a>Miscellaneous
+----------
 
 **Declare an object**
 

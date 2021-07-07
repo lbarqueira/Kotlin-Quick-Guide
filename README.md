@@ -1,4 +1,4 @@
-Kotlin Quick Guide for Android Basics in Kotlin
+[Kotlin Quick Guide for Android Basics in Kotlin](https://developer.android.com/courses/android-basics-kotlin/kotlin-quick-guide)
 ===============================================
 
 

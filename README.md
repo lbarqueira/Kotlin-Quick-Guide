@@ -37,8 +37,8 @@ This Kotlin Quick Guide summarizes the topics covered in the [Android Basics in 
 <a id="unit-one"></a>[Unit 1](https://developer.android.com/courses/android-basics-kotlin/unit-1)
 ----------------------------------------------------------------------------
 
-<a id="kotlin-programs"></a>Kotlin programs
-----------
+### <a id="kotlin-programs"></a>Kotlin programs
+
 
 **The smallest `main()` program for printing text**
 

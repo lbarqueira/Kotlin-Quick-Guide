@@ -5,7 +5,7 @@ Kotlin Quick Guide for Android Basics in Kotlin
 
 ## Table of Contents
 [Learn more](#learn-more)  
-[Unit 1](https://github.com/lbarqueira/Kotlin-Quick-Guide/blob/main/README.md#unit-1)  
+[Unit 1](#unit-one)  
 &ensp; [Kotlin programs](https://github.com/lbarqueira/Kotlin-Quick-Guide/blob/main/README.md#kotlin-programs)  
 &ensp; [Controlling program flow](https://github.com/lbarqueira/Kotlin-Quick-Guide/blob/main/README.md#controlling-program-flow)  
 &ensp; [Classes](https://github.com/lbarqueira/Kotlin-Quick-Guide/blob/main/README.md#classes)  
@@ -34,7 +34,7 @@ This Kotlin Quick Guide summarizes the topics covered in the [Android Basics in 
 -   See the [Kotlin Koans](https://play.kotlinlang.org/koans/overview) for more snippets to practice with. **Note**: This brings you to an external kotlinlang.org site that is developed by JetBrains.
 
 
-[Unit 1](https://developer.android.com/courses/android-basics-kotlin/unit-1)
+<a id="unit-one"></a>[Unit 1](https://developer.android.com/courses/android-basics-kotlin/unit-1)
 ----------------------------------------------------------------------------
 
 ### Kotlin programs
